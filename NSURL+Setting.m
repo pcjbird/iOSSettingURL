@@ -10,104 +10,104 @@
 
 @implementation NSURL (Setting)
 
--(NSURL *)mainSettingURL
++(NSURL *)mainSettingURL
 {
     return [[self class] URLWithString:UIApplicationOpenSettingsURLString];
 }
 
--(NSURL *)settingAboutURL
++(NSURL *)settingAboutURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=About"];
 }
 
--(NSURL *)settingAccessibilityURL
++(NSURL *)settingAccessibilityURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=ACCESSIBILITY"];
 }
 
--(NSURL *)settingAirplaneModeURL
++(NSURL *)settingAirplaneModeURL
 {
     return [[self class] URLWithString:@"prefs:root=AIRPLANE_MODE"];
 }
 
--(NSURL *)settingAutoLockURL
++(NSURL *)settingAutoLockURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=AUTOLOCK"];
 }
 
--(NSURL *)settingBrightnessURL
++(NSURL *)settingBrightnessURL
 {
     return [[self class] URLWithString:@"prefs:root=Brightness"];
 }
 
--(NSURL *)settingBluetoothURL
++(NSURL *)settingBluetoothURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=Bluetooth"];
 }
 
 
--(NSURL *)settingDateTimeURL
++(NSURL *)settingDateTimeURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=DATE_AND_TIME"];
 }
 
--(NSURL *)settingFaceTimeURL
++(NSURL *)settingFaceTimeURL
 {
     return [[self class] URLWithString:@"prefs:root=FACETIME"];
 }
 
--(NSURL *)settingGeneralURL
++(NSURL *)settingGeneralURL
 {
     return [[self class] URLWithString:@"prefs:root=General"];
 }
 
--(NSURL *)settingKeyboardURL
++(NSURL *)settingKeyboardURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=Keyboard"];
 }
 
--(NSURL *)settingiCloudURL
++(NSURL *)settingiCloudURL
 {
     return [[self class] URLWithString:@"prefs:root=CASTLE"];
 }
 
--(NSURL *)settingiCloudBackupURL
++(NSURL *)settingiCloudBackupURL
 {
     return [[self class] URLWithString:@"prefs:root=CASTLE&path=STORAGE_AND_BACKUP"];
 }
 
--(NSURL *)settingInternationalURL
++(NSURL *)settingInternationalURL
 {
    return [[self class] URLWithString:@"prefs:root=General&path=INTERNATIONAL"];
 }
 
--(NSURL *)settingLocationServicesURL
++(NSURL *)settingLocationServicesURL
 {
    return [[self class] URLWithString:@"prefs:root=LOCATION_SERVICES"];
 }
 
--(NSURL *)settingMusicURL
++(NSURL *)settingMusicURL
 {
     return [[self class] URLWithString:@"prefs:root=MUSIC"];
 }
 
--(NSURL *)settingMusicEqualizerURL
++(NSURL *)settingMusicEqualizerURL
 {
     return [[self class] URLWithString:@"prefs:root=MUSIC&path=EQ"];
 }
 
 
--(NSURL *)settingMusicVolumeLimitURL
++(NSURL *)settingMusicVolumeLimitURL
 {
     return [[self class] URLWithString:@"prefs:root=MUSIC&path=VolumeLimit"];
 }
 
--(NSURL *)settingNetworkURL
++(NSURL *)settingNetworkURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=Network"];
 }
 
--(NSURL *)settingNikePlusiPodURL
++(NSURL *)settingNikePlusiPodURL
 {
     return [[self class] URLWithString:@"prefs:root=NIKE_PLUS_IPOD"];
 }
@@ -117,78 +117,78 @@
     return [[self class] URLWithString:@"prefs:root=NOTES"];
 }
 
--(NSURL *)settingNotificationURL
++(NSURL *)settingNotificationURL
 {
     return [[self class] URLWithString:@"prefs:root=NOTIFICATIONS_ID"];
 }
 
 
--(NSURL *)settingPhoneURL
++(NSURL *)settingPhoneURL
 {
     return [[self class] URLWithString:@"prefs:root=Phone"];
 }
 
--(NSURL *)settingPhotosURL
++(NSURL *)settingPhotosURL
 {
     return [[self class] URLWithString:@"prefs:root=Photos"];
 }
 
--(NSURL *)settingProfileURL
++(NSURL *)settingProfileURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=ManagedConfigurationList"];
 }
 
--(NSURL *)settingResetURL
++(NSURL *)settingResetURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=Reset"];
 }
 
--(NSURL *)settingSafariURL
++(NSURL *)settingSafariURL
 {
     return [[self class] URLWithString:@"prefs:root=Safari"];
 }
 
--(NSURL *)settingSiriURL
++(NSURL *)settingSiriURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=Assistant"];
 }
 
--(NSURL *)settingSoundsURL
++(NSURL *)settingSoundsURL
 {
     return [[self class] URLWithString:@"prefs:root=Sounds"];
 }
 
--(NSURL *)settingSoftwareUpdateURL
++(NSURL *)settingSoftwareUpdateURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=SOFTWARE_UPDATE_LINK"];
 }
 
--(NSURL *)settingStoreURL
++(NSURL *)settingStoreURL
 {
     return [[self class] URLWithString:@"prefs:root=STORE"];
 }
 
--(NSURL *)settingTwitterURL
++(NSURL *)settingTwitterURL
 {
     return [[self class] URLWithString:@"prefs:root=TWITTER"];
 }
 
--(NSURL *)settingUsageURL
++(NSURL *)settingUsageURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=USAGE"];
 }
 
--(NSURL *)settingVPNURL
++(NSURL *)settingVPNURL
 {
     return [[self class] URLWithString:@"prefs:root=General&path=USAGE"];
 }
 
--(NSURL *)settingWallpaperURL
++(NSURL *)settingWallpaperURL
 {
     return [[self class] URLWithString:@"prefs:root=Wallpaper"];
 }
 
--(NSURL *)settingWiFiURL
++(NSURL *)settingWiFiURL
 {
     return [[self class] URLWithString:@"prefs:root=WIFI"];
 }

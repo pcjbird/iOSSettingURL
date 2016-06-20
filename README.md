@@ -6,13 +6,16 @@ iOS跳转到系统设置界面
 我们可以通过URL Scheme的方式跳转到系统的设置界面。
 
 比如想点击按钮跳转到wifi设置界面：
+
     - (IBAction)wifi {
         NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
     }
+    
 一些其他界面的URL Scheme：
+
     About — prefs:root=General&path=About
     Accessibility — prefs:root=General&path=ACCESSIBILITY
     Airplane Mode On — prefs:root=AIRPLANE_MODE
@@ -48,7 +51,9 @@ iOS跳转到系统设置界面
     VPN — prefs:root=General&path=Network/VPN
     Wallpaper — prefs:root=Wallpaper
     Wi-Fi — prefs:root=WIFI
+    
 打开设置界面主界面
+
     - (IBAction)settings {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
     }
